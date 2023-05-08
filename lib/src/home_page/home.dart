@@ -12,8 +12,10 @@ import 'package:plant_disease_detector/src/home_page/components/history.dart';
 import 'package:plant_disease_detector/src/home_page/components/instructions.dart';
 import 'package:plant_disease_detector/src/home_page/components/titlesection.dart';
 import 'package:plant_disease_detector/src/home_page/models/disease_model.dart';
+import 'package:plant_disease_detector/src/suggestions_page/not_sure_page.dart';
 import 'package:plant_disease_detector/src/suggestions_page/suggestions.dart';
 import 'package:provider/provider.dart';
+import 'dart:io';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -62,9 +64,8 @@ class _HomeState extends State<Home> {
                 late double _confidence;
                 await classifier.getDisease(ImageSource.gallery).then((value) {
                   _disease = Disease(
-                      name: value![0]["label"],
+                      name: value![0]["label"] ?? "Not sure",
                       imagePath: classifier.imageFile.path);
-
                   _confidence = value[0]['confidence'];
                 });
                 // Check confidence
@@ -74,51 +75,18 @@ class _HomeState extends State<Home> {
 
                   // Save disease
                   _hiveService.addDisease(_disease);
-
                   Navigator.restorablePushNamed(
                     context,
                     Suggestions.routeName,
                   );
                 } else {
                   // Display unsure message
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return NotSurePage();
+                  }));
                 }
               },
             ),
-            // SpeedDialChild(
-            //   child: const FaIcon(
-            //     FontAwesomeIcons.camera,
-            //     color: kWhite,
-            //   ),
-            //   label: "Take photo",
-            //   backgroundColor: kMain,
-            //   onTap: () async {
-            //     late double _confidence;
-            //
-            //     await classifier.getDisease(ImageSource.camera).then((value) {
-            //       _disease = Disease(
-            //           name: value![0]["label"],
-            //           imagePath: classifier.imageFile.path);
-            //
-            //       _confidence = value[0]['confidence'];
-            //     });
-            //
-            //     // Check confidence
-            //     if (_confidence > 0.8) {
-            //       // Set disease for Disease Service
-            //       _diseaseService.setDiseaseValue(_disease);
-            //
-            //       // Save disease
-            //       _hiveService.addDisease(_disease);
-            //
-            //       Navigator.restorablePushNamed(
-            //         context,
-            //         Suggestions.routeName,
-            //       );
-            //     } else {
-            //       // Display unsure message
-            //     }
-            //   },
-            // ),
           ],
         ),
         body: SafeArea(

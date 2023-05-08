@@ -1,8 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:plant_disease_detector/services/disease_provider.dart';
 import 'package:plant_disease_detector/src/home_page/home.dart';
 import 'package:plant_disease_detector/src/home_page/models/disease_model.dart';
+import 'package:plant_disease_detector/src/suggestions_page/not_sure_page.dart';
 import 'package:plant_disease_detector/src/suggestions_page/suggestions.dart';
 import 'package:provider/provider.dart';
 
@@ -34,6 +37,8 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case Suggestions.routeName:
                     return const Suggestions();
+                  case NotSurePage.routeName:
+                    return const NotSurePage();
                   case Home.routeName:
                   default:
                     return const Home();
