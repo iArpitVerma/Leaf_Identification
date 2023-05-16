@@ -11,7 +11,7 @@ The objective of this repository is to understand how to integrate and use machi
 A Flutter app that detects a plant's disease given a photo of an affected part of the plant.
 
 
-![Finished App](https://github.com/iArpitVerma/Plant_Disease_Detection/blob/main/plant_disease_detector.gif)
+![Finished App](https://github.com/iArpitVerma/Plant_Disease_Detection/blob/main/plant_disease_detection.gif)
 
 
 ## Download APK
