@@ -14,6 +14,10 @@ A Flutter app that detects a plant's disease given a photo of an affected part o
 ![Finished App](https://github.com/iArpitVerma/Plant_Disease_Detection/blob/main/plant_disease_detection.gif)
 
 
+## Download APK
+
+You can download the latest version of APK [LINK](https://github.com/iArpitVerma/plant_disease_detection/releases/tag/v1.0.0).
+
 ## How to setup the project
 
 - Clone or download the repository.
@@ -31,24 +35,25 @@ A Flutter app that detects a plant's disease given a photo of an affected part o
 
 ## Important to note
 
-- The `tflite` model has been trained to detect only a subset of the diseases. They include:
-    - Pepper Bell Bacterial Spot
-    - Pepper Bell Healthy
+- The `tflite` model has been trained to detect only a subset of the diseases. This includes:
+    - Apple Healthy
+    - Apple Black Rot
+    - Apple Cedar Rust
     - Potato Early Blight
     - Potato Healthy
     - Potato Late Blight
-    - Tomato Bacterial Spot
-    - Tomato Early Blight
+    - Pepper Bell Bacterial Spot
+    - Pepper Bell Healthy
     - Tomato Healthy
-    - Tomato Late Blight
+    - Tomato Early Blight
+    - Tomato Late Blightg
     - Tomato Leaf Mold
-    - Tomato Septoria Leaf Spot
-    - Tomato Spotted Spider Mites
-    - Tomato Target Spot
-    - Tomato Mosaic Virus
-    - Tomato Yellow Leaf Curl Virus
-- The size of the dataset was only sufficient enough to make the model recognize selected  diseases, but it faces problems with images of non-plants.
-- The dataset was from [KAGGLE](https://www.kaggle.com/saroz014/plant-diseases).
+    - Grape Healthy
+    - Grape Black Rot
+    - Grape Esca
+    - Not Valid
+- The size of the dataset was around 30,000 photos which is sufficient enough to make the model recognize selected  diseases, but it faces problems sometimes.
+- The dataset was taken from [KAGGLE](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset).
 
 
 ## Contributing
@@ -57,7 +62,7 @@ Contributions towards the project are welcome.
 Specifically:
 - The `tflite` model used can be replaced with a more accurate one/one with more diseases.
 - The responsiveness of the application can be improved.
-- Warning messages can be added for non-plant inputs made by users.
+- The app can be trained on a more extensive dataset to include more types of leaves and their diseases.
 
 
 ## Project Status

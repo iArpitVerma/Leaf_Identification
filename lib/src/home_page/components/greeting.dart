@@ -25,7 +25,7 @@ class GreetingSection extends SliverFixedExtentList {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Plant Disease Detector',
+                          'Plant Disease Detection',
                           style: TextStyle(
                               fontFamily: 'SFBold',
                               fontSize: (0.25 * height),

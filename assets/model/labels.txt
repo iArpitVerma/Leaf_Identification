@@ -1,15 +1,16 @@
-Pepper Bell Bacterial Spot
-Pepper Bell Healthy
+Apple Healthy
+Apple Black Rot
+Apple Cedar Rust
 Potato Early Blight
 Potato Healthy
 Potato Late Blight
-Tomato Bacterial Spot
-Tomato Early Blight
+Pepper Bell Bacterial Spot
+Pepper Bell Healthy
 Tomato Healthy
-Tomato Late Blight
+Tomato Early Blight
+Tomato Late Blightg
 Tomato Leaf Mold
-Tomato Septoria Leaf Spot
-Tomato Spotted Spider Mites
-Tomato Target Spot
-Tomato Mosaic Virus
-Tomato Yellow Leaf Curl Virus
+Grape Healthy
+Grape Black Rot
+Grape Esca
+Not Valid

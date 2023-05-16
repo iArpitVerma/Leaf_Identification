@@ -56,7 +56,7 @@ class NotSurePage extends StatelessWidget {
                       children: [
                         TextProperty(
                           title: 'Disease name',
-                          value: 'Not Known',
+                          value: "Can't tell",
                           height: size.height,
                         ),
                         TextProperty(
@@ -66,7 +66,7 @@ class NotSurePage extends StatelessWidget {
                         ),
                         TextProperty(
                           title: 'Possible solution',
-                          value: 'Provide a different image.',
+                          value: 'Provide a different photo.',
                           height: size.height,
                         ),
                       ],

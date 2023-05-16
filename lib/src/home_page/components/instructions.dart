@@ -34,7 +34,7 @@ class InstructionsSection extends SliverFixedExtentList {
                               ),
                             ),
                             title: Text(
-                              'Take/Select a photo of an affected plant by tapping the camera button below.',
+                              'Select a photo of an affected plant from your device by tapping the icon button at the bottom of the page.',
                               style: TextStyle(color: kWhite),
                             )),
                         ListTile(
@@ -46,7 +46,7 @@ class InstructionsSection extends SliverFixedExtentList {
                             ),
                           ),
                           title: Text(
-                              'Give it a short while before you can get a suggestion of the disease.',
+                              'The photo should have only a single leaf of the plant to be identified and be taken on plain background preferably on white sheet.',
                               style: TextStyle(color: kWhite)),
                         ),
                       ],

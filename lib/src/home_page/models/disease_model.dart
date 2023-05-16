@@ -54,13 +54,6 @@ class Disease extends HiveObject {
             "Eliminating cull piles and volunteer potatoes, using proper harvesting and storage practices, and applying fungicides when necessary.";
         break;
 
-      case "Tomato Bacterial Spot":
-        possibleCauses =
-            "Xanthomonas bacteria which can be introduced into a garden on contaminated seed and transplants, which may or may not show symptoms.";
-        possibleSolution =
-            "Remove symptomatic plants from the field or greenhouse to prevent the spread of bacteria to healthy plants.";
-        break;
-
       case "Tomato Early Blight":
         possibleCauses =
             "The fungus Alternaria solani, high humidity and long periods of leaf wetness.";
@@ -84,39 +77,45 @@ class Disease extends HiveObject {
             "Growing leaf mold resistant varieties, use drip irrigation to avoid watering foliage.";
         break;
 
-      case "Tomato Septoria Leaf Spot":
-        possibleCauses =
-            "It is a fungus and spreads by spores most rapidly in wet or humid weather. Attacks plants in the nightshade family, and can be harbored on weeds within this family.";
-        possibleSolution =
-            "Remove infected leaves immediately, use organic fungicide options.";
+      case "Apple Healthy":
+        possibleCauses = "Crops are okay.";
+        possibleSolution = "N/A";
         break;
 
-      case "Tomato Spotted Spider Mites":
-        possibleCauses =
-            "Spider mite feeding on leaves during hot and dry conditions.";
+      case "Apple Black Rot":
+        possibleCauses = "Caused by the fungus Botryosphaeria obtusa.";
         possibleSolution =
-            "Aiming a hard stream of water at infested plants to knock spider mites off the plants. Also use of insecticidal soaps, horticultural oils.";
+            "Treating the sites with the antibiotic streptomycin or a copper-based fungicide.";
         break;
 
-      case "Tomato Target Spot":
+      case "Apple Cedar Rust":
         possibleCauses =
-            "The fungus Corynespora cassiicola which spreads to plants.";
+            "Caused by the fungal pathogen Gymnosporangium juniperi-virginianae.";
         possibleSolution =
-            "Planting resistant varieties, keeping farms free from weeds.";
+            "Timely application of fungicides with the active ingredient Myclobutanil.";
         break;
 
-      case "Tomato Mosaic Virus":
-        possibleCauses =
-            "Spread by aphids and other insects, mites, fungi, nematodes, and contact; pollen and seeds can carry the infection as well.";
-        possibleSolution =
-            "No cure for infected plants, remove all infected plants and destroy them.";
+      case "Grape Healthy":
+        possibleCauses = "Crops are okay.";
+        possibleSolution = "N/A";
         break;
 
-      case "Tomato Yellow Leaf Curl Virus":
-        possibleCauses =
-            "Physically spread plant-to-plant by the silverleaf whitefly.";
+      case "Grape Black Rot":
+        possibleCauses = "Caused by the fungus Guignardia bidwellii.";
         possibleSolution =
-            "Chemical control: Imidacloprid should be sprayed on the entire plant and below the leaves.";
+            "Timely application of fungicides such as Mancozeb, and Ziram are all highly effective.";
+        break;
+
+      case "Grape Esca":
+        possibleCauses =
+            "Caused by several different fungus such as Phaeoacremonium aleophilum, Phaeomoniella chlamydospora and Fomitiporia mediterranea.";
+        possibleSolution =
+            "Grapevine surgery, where the grapevine trunk is cut open using a chainsaw.";
+        break;
+
+      case "Not Valid":
+        possibleCauses = "Not a leaf photo.";
+        possibleSolution = "Provide a leaf photo.";
         break;
 
       default:

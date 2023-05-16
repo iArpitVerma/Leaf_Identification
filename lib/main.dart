@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:plant_disease_detector/services/disease_provider.dart';
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
       create: (context) => DiseaseService(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Detect diseases',
+        title: 'Leaf App',
         theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'SFRegular'),
         onGenerateRoute: (RouteSettings routeSettings) {
           return MaterialPageRoute<void>(
