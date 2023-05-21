@@ -16,7 +16,7 @@ A Flutter app that detects a plant's disease given a photo of an affected part o
 
 ## Download APK
 
-You can download the latest version of APK [LINK](https://github.com/iArpitVerma/plant_disease_detection/releases/tag/v1.0.0).
+You can download the latest version of APK [LINK](https://github.com/iArpitVerma/plant_disease_detection/releases/tag/v2.0.0).
 
 ## How to setup the project
 
@@ -36,24 +36,17 @@ You can download the latest version of APK [LINK](https://github.com/iArpitVerma
 ## Important to note
 
 - The `tflite` model has been trained to detect only a subset of the diseases. This includes:
-    - Apple Healthy
-    - Apple Black Rot
-    - Apple Cedar Rust
-    - Potato Early Blight
-    - Potato Healthy
-    - Potato Late Blight
-    - Pepper Bell Bacterial Spot
-    - Pepper Bell Healthy
     - Tomato Healthy
     - Tomato Early Blight
-    - Tomato Late Blightg
+    - Tomato Late Blight
     - Tomato Leaf Mold
-    - Grape Healthy
-    - Grape Black Rot
-    - Grape Esca
+    - Tomato Target Spot
+    - Tomato Spider Mites
+    - Tomato Septoria Leaf Spot
+    - Tomato Bacterial Spot
     - Not Valid
-- The size of the dataset was around 30,000 photos which is sufficient enough to make the model recognize selected  diseases, but it faces problems sometimes.
-- The dataset was taken from [KAGGLE](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset).
+- The size of the dataset was around 36,000 photos which is sufficient enough to make the model recognize selected  diseases, but it faces problems sometimes.
+- The dataset was taken from [KAGGLE](https://www.kaggle.com/datasets/sadmansakibmahi/plant-disease-expert?select=Image+Data+base).
 
 
 ## Contributing

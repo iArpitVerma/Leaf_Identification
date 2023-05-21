@@ -23,37 +23,6 @@ class Disease extends HiveObject {
     dateTime = DateTime.now();
 
     switch (name) {
-      case "Pepper Bell Bacterial Spot":
-        possibleCauses =
-            "Caused by Xanthomonas bacteria, spread through splashing rain.";
-        possibleSolution =
-            "Spray early and often. Use copper and Mancozeb sprays.";
-        break;
-
-      case "Pepper Bell Healthy":
-        possibleCauses = "Crops are okay.";
-        possibleSolution = "N/A";
-        break;
-
-      case "Potato Early Blight":
-        possibleCauses =
-            "The fungus Alternaria solani, high humidity and long periods of leaf wetness.";
-        possibleSolution =
-            "Maintaining optimum growing conditions: proper fertilization, irrigation, and pests management.";
-        break;
-
-      case "Potato Healthy":
-        possibleCauses = "Crops are okay.";
-        possibleSolution = "N/A";
-        break;
-
-      case "Potato Late Blight":
-        possibleCauses =
-            "Occurs in humid regions with temperatures ranging between 4 and 29 °C.";
-        possibleSolution =
-            "Eliminating cull piles and volunteer potatoes, using proper harvesting and storage practices, and applying fungicides when necessary.";
-        break;
-
       case "Tomato Early Blight":
         possibleCauses =
             "The fungus Alternaria solani, high humidity and long periods of leaf wetness.";
@@ -68,7 +37,7 @@ class Disease extends HiveObject {
 
       case "Tomato Late Blight":
         possibleCauses = "Caused by the water mold Phytophthora infestans.";
-        possibleSolution = "Timely application of fungicide";
+        possibleSolution = "Timely application of fungicide.";
         break;
 
       case "Tomato Leaf Mold":
@@ -77,45 +46,35 @@ class Disease extends HiveObject {
             "Growing leaf mold resistant varieties, use drip irrigation to avoid watering foliage.";
         break;
 
-      case "Apple Healthy":
-        possibleCauses = "Crops are okay.";
-        possibleSolution = "N/A";
-        break;
-
-      case "Apple Black Rot":
-        possibleCauses = "Caused by the fungus Botryosphaeria obtusa.";
-        possibleSolution =
-            "Treating the sites with the antibiotic streptomycin or a copper-based fungicide.";
-        break;
-
-      case "Apple Cedar Rust":
+      case "Tomato Target Spot":
         possibleCauses =
-            "Caused by the fungal pathogen Gymnosporangium juniperi-virginianae.";
+            "Caused by the fungal pathogen Corynespora cassiicola.";
         possibleSolution =
-            "Timely application of fungicides with the active ingredient Myclobutanil.";
+            "Regular application of fungicides such as chlorothalonil, copper oxychloride or mancozeb.";
         break;
 
-      case "Grape Healthy":
-        possibleCauses = "Crops are okay.";
-        possibleSolution = "N/A";
-        break;
-
-      case "Grape Black Rot":
-        possibleCauses = "Caused by the fungus Guignardia bidwellii.";
-        possibleSolution =
-            "Timely application of fungicides such as Mancozeb, and Ziram are all highly effective.";
-        break;
-
-      case "Grape Esca":
+      case "Tomato Spider Mites":
         possibleCauses =
-            "Caused by several different fungus such as Phaeoacremonium aleophilum, Phaeomoniella chlamydospora and Fomitiporia mediterranea.";
+            "Heat, drought, water stress, the presence of a large number of weeds, and incorrect use of insecticides.";
         possibleSolution =
-            "Grapevine surgery, where the grapevine trunk is cut open using a chainsaw.";
+            "Washing plant foliage using a soft cloth or a forceful spray of lukewarm water.";
+        break;
+
+      case "Tomato Septoria Leaf Spot":
+        possibleCauses = "Caused by the fungus Septoria lycopersici.";
+        possibleSolution =
+            "Fungicides containing either copper or potassium bicarbonate will help.";
+        break;
+
+      case "Tomato Bacterial Spot":
+        possibleCauses = "Prolonged periods of high relative humidity and wetness.";
+        possibleSolution =
+            "Pesticide containing copper products or copper plus mancozeb are effective.";
         break;
 
       case "Not Valid":
         possibleCauses = "Not a leaf photo.";
-        possibleSolution = "Provide a leaf photo.";
+        possibleSolution = "Please provide a leaf photo.";
         break;
 
       default:

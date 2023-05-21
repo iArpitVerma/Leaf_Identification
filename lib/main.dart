@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       create: (context) => DiseaseService(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Leaf App',
+        title: 'LeafNet',
         theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'SFRegular'),
         onGenerateRoute: (RouteSettings routeSettings) {
           return MaterialPageRoute<void>(
